@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <!-- jQuery needs to be imported before linking JS file because that index file uses jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+
+</head>
+
+<body>
+
+    Hello world!
+    <br />
+    <span id="varID">{{ variable_here }}</span>
+    <br />
+    <button id="submit">Submit</button>
+
+</body>
+
+</html>
